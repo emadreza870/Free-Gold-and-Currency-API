@@ -1,0 +1,13 @@
+name = "tgju-price-api"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# آدرس‌های منبع (به ترتیب امتحان می‌شوند)، با کاما جدا کنید
+UPSTREAMS = "https://call5.tgju.org/ajax.json,https://call.tgju.org/ajax.json"
+# مدت کش (ثانیه). تعداد درخواست به منبع مستقل از تعداد کاربران شما می‌ماند
+CACHE_TTL = "30"
+# بعد از چند ثانیه آیتم قدیمی (stale=true) حساب شود
+STALE_SECONDS = "86400"
+# اگر خالی باشد API عمومی است. برای قفل کردن: wrangler secret put API_KEYS
+# (چند کلید با کاما جدا شوند)
